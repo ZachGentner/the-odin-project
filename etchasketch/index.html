@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="toolbar">
+        <label for="pixelInput" id="pixelDisplay"></label>
+        <input id="pixelInput" type="range" min="1" max="64" value="16">
+    
+        <label for="colorInput">Color: </label>
+        <input type="color" id="colorInput" value="#000000">
+    
+        <label for="rainbow">Rainbow</label>
+        <input type="checkbox" id="rainbow" value="unchecked">
+
+        <label for="grid">Grid</label>
+        <input type="checkbox" id="grid" value="checked" checked>
+    
+        <label for="clear">Clear</label>
+        <input type="button" value="Clear" id="clear">
+    </div>
+
+    <div id="display"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
